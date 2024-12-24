@@ -1,8 +1,6 @@
 
 name: Optimized ASCII WorkFlow
-
 on: push 
-
 jobs: 
     optimized_workflow: 
         runs-on: ubuntu-latest
@@ -11,7 +9,7 @@ jobs:
           uses: actions/checkout@v4
           
         - name: List Repo Files 
-          uses: ls -ltra
+          run: ls -ltra
 
         - name: Executing Shell Script
           run: | 
