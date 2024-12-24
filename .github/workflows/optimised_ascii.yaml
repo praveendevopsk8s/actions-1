@@ -4,11 +4,12 @@ name: Optimized ASCII WorkFlow
 on: push 
 
 jobs: 
-    ASCII-Job: 
+    optimized_workflow: 
         runs-on: ubuntu-latest
         steps:
         - name: Checkout Repoe
           uses: actions/checkout@v4
+          
         - name: List Repo Files 
           uses: ls -ltra
 
