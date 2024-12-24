@@ -1,4 +1,4 @@
-name: My first workflow
+name: ASCII WorkFlow
 
 on: push 
 
