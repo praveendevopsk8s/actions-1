@@ -1,0 +1,16 @@
+
+name: Optimized ASCII WorkFlow
+
+on: push 
+
+jobs: 
+    ASCII-Job: 
+        runs-on: ubuntu-latest
+        steps:
+        - name: Checkout Repoe
+          uses: actions/checkout@v4
+
+        - name: Executing Shell Script
+          run: | 
+            chmod +x ./ascii-script.sh
+            ./ascii-script.sh
